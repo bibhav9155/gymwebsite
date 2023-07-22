@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBHAV fitness</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+    <style>
+        body
+        {
+            font-family: 'Fjalla One', sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('gymimage.jpg');
+        }
+        .left
+        {
+            position: absolute;
+            left: 34px;
+            top: 0px;
+            display: inline-flex;
+        }
+        .left img 
+        {
+            margin-top: 10px;
+            width: 550px;
+            filter: invert(100%);
+        }
+      /*  .left div
+        {
+            text-align: center;
+            line-height: 0px;
+            font-size: 26px;
+            margin-top: 150px;
+        
+            
+        }*/
+
+        .mid
+        {
+            position: relative;
+            display: block;
+            width: 43%;
+            border-radius: 10px;
+            margin: 5px auto;
+        }
+        .right
+        {
+            position: absolute;
+            right: 34px;
+            top: 18px;
+            display: inline-block;
+        }
+        .navbar
+        {
+            display: inline-block; 
+            width: 600px;
+        }
+        .navbar li
+        {
+            display: inline-block;
+            font-size: 20px;
+            font-style: normal;
+        }
+        .navbar li a
+        {
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover,.navbar li a.active
+        {
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn
+        {
+            font-family: 'Fjalla One', sans-serif;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container
+        {
+            border: 2px solid rgb(245, 218, 66);
+            margin: 100px 50px;
+            padding: 50px 30px;
+            width: 33%;
+            border-radius: 10px;
+        }
+         .register input
+        {
+
+            display: block;
+            width: 256px;
+            padding: 11px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: -3px auto;
+
+        }
+        .container h2
+        {
+            text-align: center;
+            font-size: 40px;
+            color: goldenrod;
+        }
+        .container button
+        {
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+       <div class="left">
+         <img src="gym3.png" alt="">
+       </div> 
+       <div class="mid">
+         <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">fitness calculator</a></li>
+            <li><a href="">contact</a></li>
+         </ul>
+       </div>
+       <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+           
+       </div>
+    </header>
+    <div class="container">
+        <div class="register">
+            <h2> Register Here for joining</h2>
+            <form id="register" method="post">
+                
+                <input type="text" name="fname" id="name" placeholder="Enter Your First Name">
+                <br>
+                
+                <input type="number" name="Age" id="name" placeholder="enter your age">
+                <br>
+                
+                <input type="email" name="email" id="name" placeholder="Enter your email id">
+                <br>
+                
+                <input type="integer" name="number" id="name" placeholder="Enter your mobile number">
+                <br>
+                
+               
+                
+                <input type="radio" name="Gender" id="male">
+                
+                &nbsp;<span id="male">Male</span>
+                
+               <input type="Radio" name="Gender" id="female">
+               
+               &nbsp;<span id="female">Female</span>
+                <br>
+                
+            
+                <button class="btn">JOIN</button>
+            
+        </div>
+</body>
+</html>
